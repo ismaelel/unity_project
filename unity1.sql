@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 21, 2025 at 09:34 PM
+-- Generation Time: Jan 21, 2025 at 11:06 PM
 -- Server version: 8.0.40
 -- PHP Version: 8.2.19
 
@@ -40,7 +40,9 @@ CREATE TABLE `comments` (
 INSERT INTO `comments` (`id`, `comment`, `created_at`) VALUES
 (39, 'Bonjour à tous', '2025-01-21 10:32:09'),
 (40, 'Vous allez comment', '2025-01-21 10:32:17'),
-(41, 'salut', '2025-01-21 20:51:00');
+(41, 'salut', '2025-01-21 20:51:00'),
+(44, 'pas mal', '2025-01-21 22:35:02'),
+(45, 'okok', '2025-01-21 22:35:11');
 
 -- --------------------------------------------------------
 
@@ -104,7 +106,8 @@ INSERT INTO `users` (`id`, `username`, `password`) VALUES
 (4, 'wath', 'b86e99a84086b4b2acd2e3ca807da5845245825f9e43f4abf4705c36139c7c08'),
 (5, 'sess', 'bd717b467075e051242456dd00511c90a39afc62b1da71a80714c0fb3986cb4d'),
 (6, 'aaa', '9834876dcfb05cb167a5c24953eba58c4ac89b1adf57f28f2f9d09af107ee8f0'),
-(7, 'zzz', '17f165d5a5ba695f27c023a83aa2b3463e23810e360b7517127e90161eebabda');
+(7, 'zzz', '17f165d5a5ba695f27c023a83aa2b3463e23810e360b7517127e90161eebabda'),
+(8, 'ismael', 'be3a5ed7f9301be0bca5388b2b8143c0960e39c24972d79b7e2c301f85f4f0d4');
 
 --
 -- Indexes for dumped tables
@@ -137,7 +140,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `game_stats`
@@ -149,7 +152,7 @@ ALTER TABLE `game_stats`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables
